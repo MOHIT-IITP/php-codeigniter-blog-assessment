@@ -31,6 +31,7 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'HomeController::index');
 $routes->get('post/(:num)', 'HomeController::show/$1');
+$routes->post('post/comment', 'HomeController::addComment');
 
 // Blog routes
 $routes->get('posts', 'PostController::index');
