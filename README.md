@@ -1,27 +1,102 @@
-# CodeIgniter Blog Application
+# CodeIgniter Blog Application (MOHIT-IITP)
 
-A simple blog application with an admin panel, built using PHP CodeIgniter, MySQL, and Bootstrap.
+A full-stack blog application with an admin panel, built using PHP CodeIgniter, MySQL, and Bootstrap.  
+**Demo:**  
 
-## Features
+---
 
-- **Homepage**: Lists blog posts with title, excerpt, author, date, and a "Read More" link.
-- **Blog Detail Page**: Displays full content, a comment form (name, email, comment), and existing comments.
-- **Admin Panel**: Allows adding, editing, and deleting blog posts (title, content, author).
-- **Styling**: Responsive design using Bootstrap.
+## 📝 Project Overview
 
-## Installation
+### Features
+1. **Homepage**  
+   - Lists all blog posts with title, excerpt (first 100 characters), author name, publication date, and a "Read More" link.
+   - Responsive design using Bootstrap.
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/MOHIT-IITP/php-codeigniter-blog-assessment 
-    ```
-2. Import the SQL file to create the `blogs` and `comments` tables.
-3. Configure the database in `application/config/database.php`.
-4. Run the application via a local server (e.g., Apache).
+2. **Blog Detail Page**  
+   - Displays full blog content.
+   - Comment section: Users can submit comments with name, email, and comment text.
+   - Shows existing comments chronologically.
 
-## Technologies Used
+3. **Admin Panel**  
+   - **Add/Edit/Delete Blog Posts**: Admin can manage blog content (title, content, author).
 
-- **PHP CodeIgniter (MVC)**
-- **MySQL**
-- **HTML/CSS/JavaScript**
-- **Bootstrap**
+### Technologies
+- **Backend**: PHP CodeIgniter 4 (MVC architecture)
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap 5
+- **Database**: MySQL
+- **Version Control**: Git
+
+---
+
+## 🛠️ Setup Instructions
+
+### Prerequisites
+- PHP 7.4+ (with `mbstring` and `pdo_mysql` extensions enabled)
+- MySQL 5.6+
+- Apache/Nginx or PHP built-in server
+- Composer 
+
+### Steps
+1. **Clone the Repository**  
+git clone https://github.com/MOHIT-IITP/php-codeigniter-blog-assessment.git
+cd blogapp 
+
+text
+
+2. **Database Setup**  
+- Create a MySQL database (e.g., `blogapp`).
+- Make the SQL schema :
+  ```
+  php spark migrate 
+  ```
+
+3. **Configure the Database**  
+Update `blogapp/app/config/database.php` with your credentials:
+$db['default'] = [
+'dsn' => '',
+'hostname' => 'localhost',
+'username' => 'your_db_username',
+'password' => 'your_db_password',
+'database' => 'blogapp',
+// ... rest of the config
+];
+
+text
+
+4. **Configure Base URL**  
+Update `blogapp/app/config/config.php`:
+$config['base_url'] = 'http://localhost:8080/'; // Adjust port/path as needed
+
+text
+
+---
+
+## 🚀 Run the Project
+
+### Using PHP Built-in Server
+php spark serve
+
+text
+Visit `http://localhost:8080` in your browser.
+
+### Using Apache/Nginx
+- Place the project in your web server’s root directory (e.g., `htdocs` or `/var/www/html`).
+- Ensure `mod_rewrite` is enabled for clean URLs.
+
+---
+
+## 📂 Directory Structure (Key Files) (Blog App)
+app/
+├── controllers/
+│ ├── HomeController.php # Handles homepage/blog details
+│ └── Admin/BlogPostController.php # Admin CRUD operations
+├── models/
+│ ├── BlogPostModel.php # Blog database operations
+│ └── CommentModel.php # Comment database operations
+├── views/
+  ├── /home/index.php/ # Homepage and detail page templates
+  └── admin/create.php , etc/ # Admin panel templates
+
+text
+
+---
