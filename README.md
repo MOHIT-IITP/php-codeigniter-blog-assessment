@@ -13,7 +13,7 @@ A simple blog application with an admin panel, built using PHP CodeIgniter, MySQ
 
 1. Clone the repository:
     ```bash
-    git clone [repo-url]
+    git clone https://github.com/MOHIT-IITP/php-codeigniter-blog-assessment 
     ```
 2. Import the SQL file to create the `blogs` and `comments` tables.
 3. Configure the database in `application/config/database.php`.
