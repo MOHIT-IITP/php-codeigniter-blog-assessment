@@ -28,6 +28,13 @@ A full-stack blog application with an admin panel, built using PHP CodeIgniter, 
 
 ---
 
+## 🎥 Video Demo
+
+Watch the application demo to see it in action:
+[![Blog Application Demo](https://img.shields.io/badge/Watch-Demo-red)](https://drive.google.com/file/d/1BIZMsKCK3JMN0fBqhOmg65es9BjtBBay/view?usp=sharing)
+
+---
+
 ## 🛠️ Setup Instructions
 
 ### Prerequisites
@@ -80,7 +87,7 @@ text
 Visit `http://localhost:8080` in your browser.
 
 ### Using Apache/Nginx
-- Place the project in your web server’s root directory (e.g., `htdocs` or `/var/www/html`).
+- Place the project in your web server's root directory (e.g., `htdocs` or `/var/www/html`).
 - Ensure `mod_rewrite` is enabled for clean URLs.
 
 ---
