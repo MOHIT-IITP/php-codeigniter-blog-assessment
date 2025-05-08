@@ -1,33 +1,27 @@
-CodeIgniter Blog Application
-A simple blog application with admin panel, built using PHP CodeIgniter, MySQL, and Bootstrap.
+# CodeIgniter Blog Application
 
-Features
+A simple blog application with an admin panel, built using PHP CodeIgniter, MySQL, and Bootstrap.
 
-Homepage: Lists blog posts with title, excerpt, author, date, and "Read More" link.
+## Features
 
-Blog Detail Page: Shows full content, comment form (name, email, comment), and displays existing comments.
+- **Homepage**: Lists blog posts with title, excerpt, author, date, and a "Read More" link.
+- **Blog Detail Page**: Displays full content, a comment form (name, email, comment), and existing comments.
+- **Admin Panel**: Allows adding, editing, and deleting blog posts (title, content, author).
+- **Styling**: Responsive design using Bootstrap.
 
-Admin Panel: Add/edit/delete blog posts (title, content, author).
+## Installation
 
-Styling: Responsive design using Bootstrap.
+1. Clone the repository:
+    ```bash
+    git clone [repo-url]
+    ```
+2. Import the SQL file to create the `blogs` and `comments` tables.
+3. Configure the database in `application/config/database.php`.
+4. Run the application via a local server (e.g., Apache).
 
-Installation
+## Technologies Used
 
-Clone repository: git clone [repo-url]
-
-Import SQL file (create blogs and comments tables).
-
-Configure database in application/config/database.php.
-
-Run via local server (e.g., Apache).
-
-Technologies
-
-PHP CodeIgniter (MVC)
-
-MySQL
-
-HTML/CSS/JavaScript
-
-Bootstrap
-
+- **PHP CodeIgniter (MVC)**
+- **MySQL**
+- **HTML/CSS/JavaScript**
+- **Bootstrap**
