@@ -1,7 +1,7 @@
 # CodeIgniter Blog Application (MOHIT-IITP)
 
 A full-stack blog application with an admin panel, built using PHP CodeIgniter, MySQL, and Bootstrap.  
-**Demo:**  
+**Demo:**  https://drive.google.com/file/d/1BIZMsKCK3JMN0fBqhOmg65es9BjtBBay/view?usp=sharing
 
 ---
 
